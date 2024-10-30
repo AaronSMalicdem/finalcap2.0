@@ -18,3 +18,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+Route::get('/admin/kuwago1/feedbacks', function () {
+    return view('admin.kuwago1.feedbacks'); // Adjust to your view path
+})->name('admin.kuwago1.feedbacks');
+
+Route::get('/navbar', function () {
+    return view('navbar'); // Adjust to your view path
+})->name('navbar');

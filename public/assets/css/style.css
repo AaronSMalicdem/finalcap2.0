@@ -1,0 +1,239 @@
+/* ---------------------STYLES FOR TOP BAR------------------------ */
+div.top-bar {
+    padding:5px ; 
+    background: rgba(255, 255, 255, 0.1) ;
+    border-radius: 100px ; 
+    backdrop-filter: blur(10px) ;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) ;
+    z-index: 1005;
+}
+.dropdown-oval-container {
+    padding: 5px 15px; /* Increased vertical padding for taller container */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 40px; /* Oval shape with slimmer appearance */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: relative; /* Position relative for absolute dropdown */
+    z-index: 1001; /* Ensure this is above other content */
+}
+
+/* Dropdown Button with Transparent Background */
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem; /* Adjusted for thinner style */
+    font-weight: bold;
+}
+div.dropdown-menu {
+    position: absolute; /* Position absolute to avoid affecting navbar */
+    top: 100%; /* Place it below the button */
+    left: 0;
+    right: 0; /* Make it full width */
+    z-index: 1002; /* Ensure dropdown appears above other elements */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for glassmorphism */
+    border-radius: 10px; /* Rounded corners for dropdown */
+    backdrop-filter: blur(100px); /* Apply blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: border for definition */
+}
+
+.welcome-user{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.right-icons a{
+    font-size: 20px;
+    color: #fff;
+}
+/* ---------------------END OF STYLES FOR TOP BAR------------------------ */
+
+
+
+/* ---------------------STYLES FOR TOP SIDEBAR------------------------ */
+.glass-sidebar {
+    position: fixed; /* Fixed position to stay in view */
+    top: 50%; /* Center the sidebar vertically */
+    left: 100px; /* Adjust position from the left */
+    transform: translateY(-50%); /* Center vertically */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 15px;
+    width: 60px; /* Width when collapsed */
+    transition: width 0.3s ease; /* Transition for width change */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.glass-sidebar.collapsed {
+    width: 60px; /* Width when collapsed */
+}
+
+.glass-sidebar.expanded {
+    width: 130px; /* Width when expanded */
+}
+
+.glass-sidebar .nav-link {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+    justify-content: center; /* Center icons horizontally */
+    padding: 17px 0; /* Adjust padding for better centering */
+    color: white;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.glass-sidebar.collapsed .nav-link {
+    justify-content: center; /* Center icons when sidebar is collapsed */
+}
+
+.glass-sidebar.expanded .nav-link {
+    justify-content: flex-start; /* Align to the left when expanded */
+    padding: 10px 0; /* Adjust padding */
+}
+
+.glass-sidebar .nav-link span {
+    display: none; /* Hide text by default */
+}
+
+.glass-sidebar.expanded .nav-link span {
+    display: inline-block; /* Show text when expanded */
+    margin-left: 10px; /* Space between icon and text */
+}
+
+.glass-sidebar .nav-link i {
+    font-size: 20px; /* Icon size */
+}
+
+/* Highlight active icon */
+.glass-sidebar .nav-link.active i {
+    background: white; /* Background for active icon */
+    color: #000; /* Icon color for active state */
+    border-radius: 50%; /* Circle around active icon */
+    padding: 8px; /* Increased padding for a larger circle */
+}
+
+/* Remove text underline on hover */
+.glass-sidebar .nav-link:hover {
+    text-decoration: none;
+}
+/* ---------------------STYLES FOR TOP SIDEBAR------------------------ */
+
+
+
+
+
+
+/* ---------------------STYLES FOR TOP FEEDBACKS MAIN CONTENT------------------------ */
+div.rating-section{
+    backdrop-filter: blur(100px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+div.main-content{
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
+}
+div.comments-container {
+height: 445px;
+overflow-y: auto;
+background-color: transparent; /* Make background transparent */
+border: none; /* Remove border */
+}
+div.comments-container::-webkit-scrollbar {
+width: 5px; /* Slim width for the scrollbar track */
+background-color: rgba(255, 255, 255, 0.1); /* Light background for track */
+}
+
+div.comments-container::-webkit-scrollbar-track {
+background-color: rgba(255, 255, 255, 0.1); /* Light background for track */
+}
+
+div.comments-container::-webkit-scrollbar-thumb {
+width: 12px; /* Thicker thumb */
+background-color: rgba(255, 255, 255, 0.8); /* White thumb */
+border-radius: 6px; /* Optional rounded corners */
+margin: 2px; /* Adds space around the thumb for a more centered look */
+position: relative; /* Ensures it's visually distinct */
+}
+
+
+div.comments-container::-webkit-scrollbar-thumb:hover {
+background-color: rgba(255, 255, 255, 1); /* Slightly brighter on hover */
+}
+
+  .comments-content {
+        padding: 5px;
+        color: #fff; /* White text for contrast */
+        line-height:1;
+        
+    }
+
+    .comments-header {
+        color: #fff;
+    }
+    .comments-date{
+        font-size:12px;
+    }
+
+h4.overall-rating{
+    color:#fff ;
+}
+/* ---------------------END OF STYLES FOR FEEDBACKS MAIN CONTENT------------------------ */
+
+/* ---------------------STYLES FOR FOOTER------------------------ */
+.footer {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    z-index: 10;
+}
+
+
+.footer .filter-icon {
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+div.icon-filter{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+
+}
+div.dropdown-footer{
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+
+}
+.footer select {
+    background:transparent;
+}
+
+/* ---------------------END OF STYLES FOR FOOTER------------------------ */
+
+
+
+
+
+
+
+
+
+
+
