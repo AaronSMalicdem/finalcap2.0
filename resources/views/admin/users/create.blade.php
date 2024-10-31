@@ -271,6 +271,11 @@
         </div>
     </div>
    
+    <script>
+        function showUserDetails() {
+            document.getElementById('userDetails').style.display = 'block';
+        }
+    </script>
     
     <script>
         function showAccounts(type) {

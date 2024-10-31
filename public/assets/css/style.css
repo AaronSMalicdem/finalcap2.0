@@ -366,7 +366,7 @@ div.user-image{
 
 /* ---------------------STYLES FOR USERS EDIT------------------------ */
 div.save-button{
-    background: rgba(247, 243, 4, 0.2);
+    background: rgba(242, 210, 2, 0.964) ;
     border-radius: 10px;
 }
 
@@ -398,7 +398,7 @@ input.username-input:active {
 
 } 
 input.username-input::placeholder {
-    color: #fff; /* Placeholder color */
+    color: #aaa; /* Placeholder color */
 }
 
 div.description {
@@ -605,6 +605,83 @@ input.password-input::placeholder {
 }
 /* ---------------------END OF STYLES FOR USERS CREATE------------------------ */
 
+
+/* ---------------------STYLES FOR USERS CHANGE PASSWORD------------------------ */
+
+input.currentpassword-input {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input.currentpassword-input:focus,
+input.currentpassword-input:active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+input.currentpassword-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.newpassword-input {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input.newpassword-input:focus,
+input.newpassword-input:active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+input.newpassword-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+
+input.confirmpassword-input {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input.confirmpassword-input:focus,
+input.confirmpassword-input:active {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+input.confirmpassword-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+div.cancel-create{
+    background: rgb(255, 255, 255) ;
+    border-radius: 15px ; 
+}
+
+div.save-create{
+    background: rgba(242, 210, 2, 0.964) ;
+    border-radius: 15px ; 
+}
+/* ---------------------END OF STYLES FOR USERS CHANGE PASSWORD------------------------ */
 
 
 
