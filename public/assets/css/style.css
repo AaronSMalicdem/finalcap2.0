@@ -229,6 +229,139 @@ div.dropdown-footer{
 
 
 
+/* ---------------------STYLES FOR USERS INDEX------------------------ */
+body{
+    background-image: url('https://t4.ftcdn.net/jpg/07/94/30/45/360_F_794304521_O4o0Y5UrvKtDxBNHY9utMowV2VhuhRpk.jpg');
+    backdrop-filter: blur(15px);
+}
+
+div.account-type{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-position{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-username{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-description{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-access{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-role{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-fullname{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.user-contact{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+h5.all-accounts{
+color: #fff;
+}
+.user-icon{
+    color: #fff;
+    font-size: 18px;
+    }
+
+div.user-list{
+    color: #fff;
+}
+
+div.user-image{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.user-position, .user-username, .user-description{
+    color: #fff;
+}
+.user-description {
+    height: 50px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    padding: 10px; /* Optional padding for better aesthetics */
+}
+.user-description::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+/* Hide the scrollbar in Firefox */
+.user-description {
+    scrollbar-width: none; /* Firefox */
+}
+.back-button {
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    outline: none; 
+    color: #fff;
+    font-size: 25px;
+}
+.addUser-button{
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    outline: none; 
+    color: #fff;
+    font-size: 25px;
+}
+.edit-button{
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    outline: none; 
+    color: #fff;
+    font-size: 15px;
+}
+.scrollable-list {
+    max-height: 350px; /* Set the desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 1rem; /* Optional: Add some spacing below the list */
+    overflow-x: hidden;
+}
+
+/* Optional: Adjust styles for the user item */
+.user-item {
+    margin-bottom: 10px; /* Space between user items */
+}
+.user-image {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #000; /* Optional: Add a border around the image */
+}
+/* ---------------------END OF STYLES FOR USERS INDEX------------------------ */
 
 
 
