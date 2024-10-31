@@ -28,6 +28,18 @@ Route::get('/admin/users/index', function () {
     return view('admin.users.index'); // Adjust to your view path
 })->name('admin.users.index');
 
+Route::get('/admin/users/edit', function () {
+    return view('admin.users.edit'); // Adjust to your view path
+})->name('admin.users.edit');
+
+Route::get('/admin/users/create', function () {
+    return view('admin.users.create'); // Adjust to your view path
+})->name('admin.users.create');
+
+Route::get('/admin/users/changepass', function () {
+    return view('admin.users.changepass'); // Adjust to your view path
+})->name('admin.users.changepass');
+
 Route::get('/navbar', function () {
     return view('navbar'); // Adjust to your view path
 })->name('navbar');

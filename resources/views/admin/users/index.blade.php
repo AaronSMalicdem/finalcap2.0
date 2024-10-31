@@ -23,7 +23,7 @@
                     <h3 style="color: #fff;">Accounts</h3>
                 </div>
                 <div class="col-lg-2 d-flex justify-content-end  mt-5">
-                    <button id="addUserButton" class=" addUser-button"><i class="fas fa-plus"></i></button>
+                    <a href="{{url('admin/users/create')}}"><button id="addUserButton" class=" addUser-button"><i class="fas fa-plus"></i></button></a>
                 </div>
             </div>
         </div>
@@ -104,9 +104,11 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-2 ">
-                                                            <button class="edit-button">
-                                                                <i class="fa-regular fa-pen-to-square"></i>
-                                                            </button>
+                                                            <a href="{{ url('admin/users/edit') }}">
+                                                                <button class="edit-button">
+                                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                                </button>
+                                                            </a>                                                            
                                                         </div>
                                                     </div>
                                                 @endfor
@@ -120,7 +122,7 @@
                             <div class="col-lg-6 mt-4 d-flex justify-content-center">
                                 <div class="container" id="userDetails" style="display: none;">
                                     <div class="row">
-                                        <div class="col-lg-4  user-image" style="height:140px;">
+                                        <div class="col-lg-4 user-image" style="height:140px;">
                                             <p class="user-details">User Image</p>
                                         </div>
                                         <div class="col-lg-8 ">

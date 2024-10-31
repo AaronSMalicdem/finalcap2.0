@@ -364,7 +364,246 @@ div.user-image{
 /* ---------------------END OF STYLES FOR USERS INDEX------------------------ */
 
 
+/* ---------------------STYLES FOR USERS EDIT------------------------ */
+div.save-button{
+    background: rgba(247, 243, 4, 0.2);
+    border-radius: 10px;
+}
 
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+div.username{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input.username-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.username-input:focus,
+input.username-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.username-input::placeholder {
+    color: #fff; /* Placeholder color */
+}
+
+div.description {
+    height: 50px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+input.description-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.description-input:focus,
+input.description-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.description-input::placeholder {
+    color: #fff;
+}
+input.description-input::-webkit-scrollbar {
+    display: none;
+}
+
+input.description-input {
+    scrollbar-width: none;
+}
+
+button.dropdown-toggle{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.fullname{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+div.contact{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+input.fname-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.fname-input:focus,
+input.fname-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.fname-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.lname-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.lname-input:focus,
+input.lname-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.lname-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.mname-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.mname-input:focus,
+input.mname-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.mname-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.suffix-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.suffix-input:focus,
+input.suffix-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.suffix-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.email-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+   
+}
+input.email-input:focus,
+input.email-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+
+} 
+input.email-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+input.phone-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+
+   
+}
+input.phone-input:focus,
+input.phone-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+} 
+input.phone-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+.linktopass {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ---------------------END OF STYLES FOR USERS EDIT------------------------ */
+
+/* ---------------------STYLES FOR USERS CREATE------------------------ */
+/* I just coppied the entire code to the edit */
+input.password-input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%; /* Full-width underline */
+    color: #fff;
+
+   
+}
+input.password-input:focus,
+input.password-input:active {
+    background:transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+} 
+input.password-input::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+/* ---------------------END OF STYLES FOR USERS CREATE------------------------ */
 
 
 
