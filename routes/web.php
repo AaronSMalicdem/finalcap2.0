@@ -44,6 +44,10 @@ Route::get('/kuwago_managers/index', function () {
     return view('kuwago_managers.index'); // Adjust to your view path
 })->name('kuwago_managers.index');
 
+Route::get('/kuwago_managers/edit', function () {
+    return view('kuwago_managers.edit'); // Adjust to your view path
+})->name('kuwago_managers.edit');
+
 Route::get('/navbar', function () {
     return view('navbar'); // Adjust to your view path
 })->name('navbar');

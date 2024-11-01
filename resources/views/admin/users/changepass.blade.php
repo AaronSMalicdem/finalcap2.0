@@ -197,7 +197,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 "></div>
-            <div class="col-lg-2 d-flex justify-content-end mb-5">
+            <div class="col-lg-2 d-flex justify-content-end">
                 <i class="fa-regular fa-trash-can fa-2x" style="color: #fff;"></i>
             </div>
         </div>
