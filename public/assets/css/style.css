@@ -237,10 +237,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh; /* Ensures body takes the full viewport height */
-    width: 100vw;
-      
-       
-    
+    width: 100vw; 
 }
 
 div.account-type{
@@ -251,6 +248,13 @@ div.account-type{
     border-radius: 10px;
     max-width: 120px;
 }
+.account-type.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 div.user-position{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

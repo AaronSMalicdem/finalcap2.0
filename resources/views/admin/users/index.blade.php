@@ -47,16 +47,16 @@
 
                                 <div class="container mb-3 mt-3">
                                     <div class="row d-flex justify-content-around">
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all')">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all', this)">
                                             <h6>All</h6>
                                         </div>
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('owner')">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('owner', this)">
                                             <h6>Owner</h6>
                                         </div>
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('finance')">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('finance', this)">
                                             <h6>Finance</h6>
                                         </div>
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('managers')">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('managers', this)">
                                             <h6>Managers</h6>
                                         </div>
                                     </div>
@@ -64,54 +64,84 @@
 
                                 <div id="allAccountsContent" class="account-content" style="display: none;">
                                     <!-- Add the relevant HTML or content for all accounts here -->
-                                </div>
-                                
-                                <div id="ownerAccountsContent" class="account-content" style="display: none;">
-                                    <!-- Add the relevant HTML or content for owner accounts here -->
-                                </div>
-                                
-                                <div id="financeAccountsContent" class="account-content" style="display: none;">
-                                    <!-- Add the relevant HTML or content for finance accounts here -->
-                                </div>
-                                
-                                <div id="managersAccountsContent" class="account-content" style="display: none;">
-                                    <!-- Add the relevant HTML or content for manager accounts here -->
-                                </div>
-
-                                {{-- USER LIST --}}
-                                <div class="container mt-3 user-list">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="scrollable-list">
-                                                <!-- Loop to generate 10 dummy users -->
-                                                @for ($i = 1; $i <= 10; $i++)
-                                                    <div class="row user-item" onclick="showUserDetails()">
-                                                        <div class="col-lg-10 d-flex justify-content-center ">
-                                                            <div class="container">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3  text-center">
-                                                                        <!-- Dummy image -->
-                                                                        <img src="https://via.placeholder.com/80" alt="User Image" class="user-image">
-                                                                    </div>
-                                                                    <div class="col-lg-9 ">
-                                                                        <p>Aaron Makicdem {{ $i }} - Operational Manager</p>
+                                    <div class="container mt-3 user-list">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="scrollable-list">
+                                                    <!-- Loop to generate 10 dummy users -->
+                                                    @for ($i = 1; $i <= 10; $i++)
+                                                        <div class="row user-item" onclick="showUserDetails()">
+                                                            <div class="col-lg-10 d-flex justify-content-center ">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3  text-center">
+                                                                            <!-- Dummy image -->
+                                                                            <img src="https://via.placeholder.com/80" alt="User Image" class="user-image">
+                                                                        </div>
+                                                                        <div class="col-lg-9 ">
+                                                                            <p>Dennis {{ $i }} - Admin</p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-lg-2 ">
+                                                                <a href="{{ url('admin/users/edit') }}">
+                                                                    <button class="edit-button">
+                                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                                    </button>
+                                                                </a>                                                            
+                                                            </div>
                                                         </div>
-                                                        <div class="col-lg-2 ">
-                                                            <a href="{{ url('admin/users/edit') }}">
-                                                                <button class="edit-button">
-                                                                    <i class="fa-regular fa-pen-to-square"></i>
-                                                                </button>
-                                                            </a>                                                            
-                                                        </div>
-                                                    </div>
-                                                @endfor
+                                                    @endfor
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div id="ownerAccountsContent" class="account-content" style="display: none;">
+                                    <!-- Add the relevant HTML or content for owner accounts here -->
+                                    <div class="container mt-3 user-list">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="scrollable-list">
+                                                    <!-- Loop to generate 10 dummy users -->
+                                                    @for ($i = 1; $i <= 10; $i++)
+                                                        <div class="row user-item" onclick="showUserDetails()">
+                                                            <div class="col-lg-10 d-flex justify-content-center ">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3  text-center">
+                                                                            <!-- Dummy image -->
+                                                                            <img src="https://via.placeholder.com/80" alt="User Image" class="user-image">
+                                                                        </div>
+                                                                        <div class="col-lg-9 ">
+                                                                            <p>Aaron {{ $i }} - Operational Manager</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 ">
+                                                                <a href="{{ url('admin/users/edit') }}">
+                                                                    <button class="edit-button">
+                                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                                    </button>
+                                                                </a>                                                            
+                                                            </div>
+                                                        </div>
+                                                    @endfor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="financeAccountsContent" class="account-content" style="display: none;">
+                                    <!-- Add the relevant HTML or content for finance accounts here -->
+                                </div>
+                                <div id="managersAccountsContent" class="account-content" style="display: none;">
+                                    <!-- Add the relevant HTML or content for manager accounts here -->
+                                </div>
+
+                              
                             </div>
 
                             {{-- Users Details View --}}
@@ -222,7 +252,7 @@
     </script>
     
     <script>
-        function showAccounts(type) {
+        function showAccounts(type, element) {
             // Hide all account-specific content sections
             document.getElementById('allAccountsContent').style.display = 'none';
             document.getElementById('ownerAccountsContent').style.display = 'none';
@@ -239,6 +269,13 @@
             } else if (type === 'managers') {
                 document.getElementById('managersAccountsContent').style.display = 'block';
             }
+    
+            // Remove 'active' class from all account-type buttons
+            const accountTypes = document.querySelectorAll('.account-type');
+            accountTypes.forEach(btn => btn.classList.remove('active'));
+    
+            // Add 'active' class to the clicked button
+            element.classList.add('active');
         }
     </script>
 
