@@ -63,22 +63,18 @@
                                 </div>
 
                                 <div id="allAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying all accounts...</p>
                                     <!-- Add the relevant HTML or content for all accounts here -->
                                 </div>
                                 
                                 <div id="ownerAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying owner accounts...</p>
                                     <!-- Add the relevant HTML or content for owner accounts here -->
                                 </div>
                                 
                                 <div id="financeAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying finance accounts...</p>
-                                    <!-- Add the relevant HTML or content for admin accounts here -->
+                                    <!-- Add the relevant HTML or content for finance accounts here -->
                                 </div>
                                 
                                 <div id="managersAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying manager accounts...</p>
                                     <!-- Add the relevant HTML or content for manager accounts here -->
                                 </div>
 

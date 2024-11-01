@@ -63,27 +63,89 @@
                                 </div>
 
                                 <div id="allAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying all accounts...</p>
                                     <!-- Add the relevant HTML or content for all accounts here -->
+                                    <div class="container mt-3 user-list">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="scrollable-list">
+                                                    <!-- Loop to generate 10 dummy users -->
+                                                    @for ($i = 1; $i <= 10; $i++)
+                                                        <div class="row user-item" onclick="showUserDetails()">
+                                                            <div class="col-lg-10 d-flex justify-content-center ">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3  text-center">
+                                                                            <!-- Dummy image -->
+                                                                            <img src="https://via.placeholder.com/80" alt="User Image" class="user-image">
+                                                                        </div>
+                                                                        <div class="col-lg-9 ">
+                                                                            <p>Aaron Makicdem {{ $i }} - Operational Manager</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 ">
+                                                                <a href="{{ url('admin/users/edit') }}">
+                                                                    <button class="edit-button">
+                                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                                    </button>
+                                                                </a>                                                            
+                                                            </div>
+                                                        </div>
+                                                    @endfor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <div id="ownerAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying owner accounts...</p>
                                     <!-- Add the relevant HTML or content for owner accounts here -->
+                                    <div class="container mt-3 user-list">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="scrollable-list">
+                                                    <!-- Loop to generate 10 dummy users -->
+                                                    @for ($i = 1; $i <= 10; $i++)
+                                                        <div class="row user-item" onclick="showUserDetails()">
+                                                            <div class="col-lg-10 d-flex justify-content-center ">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3  text-center">
+                                                                            <!-- Dummy image -->
+                                                                            <img src="https://via.placeholder.com/80" alt="User Image" class="user-image">
+                                                                        </div>
+                                                                        <div class="col-lg-9 ">
+                                                                            <p>Dennis {{ $i }} - Admin</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 ">
+                                                                <a href="{{ url('admin/users/edit') }}">
+                                                                    <button class="edit-button">
+                                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                                    </button>
+                                                                </a>                                                            
+                                                            </div>
+                                                        </div>
+                                                    @endfor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <div id="financeAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying finance accounts...</p>
-                                    <!-- Add the relevant HTML or content for admin accounts here -->
+                                    <!-- Add the relevant HTML or content for finance accounts here -->
                                 </div>
                                 
                                 <div id="managersAccountsContent" class="account-content" style="display: none;">
-                                    <p>Displaying manager accounts...</p>
                                     <!-- Add the relevant HTML or content for manager accounts here -->
                                 </div>
 
                                 {{-- USER LIST --}}
-                                <div class="container mt-3 user-list">
+                                {{-- <div class="container mt-3 user-list">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="scrollable-list">
@@ -115,7 +177,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             {{-- EDIT SECTION --}}
