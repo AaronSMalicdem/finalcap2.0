@@ -57,18 +57,19 @@
 <!-- Logout Confirmation Modal -->
 <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="logoutModalLabel">Come Back Soon!</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content text-center border-0">
+            <div class="modal-header d-flex justify-content-center border-0">
+                <h4 class="modal-title w-100" id="logoutModalLabel">Come Back Soon!</h4>
             </div>
             <div class="modal-body">
                 <p>Are you sure you want to logout? You will be returned to the login page.</p>
             </div>
-            <div class="modal-footer">
-                <a href="#" class="text-decoration-none text-secondary" data-bs-dismiss="modal">Cancel</a>
+            <div class="modal-footer d-flex justify-content-center border-0">
+                <a href="#" class="text-decoration-none text-secondary me-auto" data-bs-dismiss="modal">Cancel</a>
                 <a href="#" class="text-decoration-none text-primary" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign Out</a>
             </div>
         </div>
     </div>
 </div>
+
+
