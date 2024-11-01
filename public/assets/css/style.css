@@ -241,6 +241,7 @@ div.account-type{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    max-width: 120px;
 }
 div.user-position{
     background: rgba(255, 255, 255, 0.2);
@@ -427,7 +428,7 @@ input.description-input:active {
 
 } 
 input.description-input::placeholder {
-    color: #fff;
+    color: #aaa;
 }
 input.description-input::-webkit-scrollbar {
     display: none;
@@ -562,9 +563,8 @@ input.phone-input {
     outline: none;
     width: 100%; /* Full-width underline */
     color: #fff;
-
-   
 }
+
 input.phone-input:focus,
 input.phone-input:active {
     background:transparent;

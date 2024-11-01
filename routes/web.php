@@ -40,6 +40,10 @@ Route::get('/admin/users/changepass', function () {
     return view('admin.users.changepass'); // Adjust to your view path
 })->name('admin.users.changepass');
 
+Route::get('/kuwago_managers/index', function () {
+    return view('kuwago_managers.index'); // Adjust to your view path
+})->name('kuwago_managers.index');
+
 Route::get('/navbar', function () {
     return view('navbar'); // Adjust to your view path
 })->name('navbar');

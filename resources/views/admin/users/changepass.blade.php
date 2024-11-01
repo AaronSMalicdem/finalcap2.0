@@ -23,7 +23,7 @@
                     <h3 style="color: #fff;">Accounts</h3>
                 </div>
                 <div class="col-lg-2 d-flex justify-content-end  mt-5">
-                    <button id="addUserButton" class=" addUser-button"><i class="fas fa-plus"></i></button>
+                    <a href="{{url('admin/users/create')}}"><button id="addUserButton" class=" addUser-button"><i class="fas fa-plus"></i></button></a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                                 </div>
 
                                 <div class="container mb-3 mt-3">
-                                    <div class="row">
+                                    <div class="row d-flex justify-content-around">
                                         <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all')">
                                             <h6>All</h6>
                                         </div>
@@ -194,7 +194,7 @@
         </div>
     </div>
 
-    <div class="container" style="margin-top:1%;">
+    <div class="container">
         <div class="row">
             <div class="col-lg-10 "></div>
             <div class="col-lg-2 d-flex justify-content-end mb-5">
