@@ -29,6 +29,7 @@ div.top-bar {
     font-size: 1rem; /* Adjusted for thinner style */
     font-weight: bold;
 }
+
 div.dropdown-menu {
     position: absolute; /* Position absolute to avoid affecting navbar */
     top: 100%; /* Place it below the button */
@@ -146,6 +147,8 @@ div.main-content{
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border-radius:10px;
+    background: rgba(255, 255, 255, 0.1);
+
 }
 div.comments-container {
 height: 445px;
@@ -233,11 +236,12 @@ div.dropdown-footer{
 /* ---------------------STYLES FOR USERS INDEX------------------------ */
 body{
     background-image: url('https://t4.ftcdn.net/jpg/07/94/30/45/360_F_794304521_O4o0Y5UrvKtDxBNHY9utMowV2VhuhRpk.jpg');
-    backdrop-filter: blur(15px);
-    background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh; /* Ensures body takes the full viewport height */
-    width: 100vw; 
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px); /* Optional: adds blur effect */
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+
 }
 
 div.account-type{
@@ -378,7 +382,7 @@ div.user-image{
 
 
 /* ---------------------STYLES FOR USERS EDIT------------------------ */
-div.save-button{
+button.save-button{
     background: rgba(242, 210, 2, 0.964) ;
     border-radius: 10px;
 }
@@ -450,12 +454,13 @@ input.description-input {
     scrollbar-width: none;
 }
 
-button.dropdown-toggle{
+button.users-dropdown-toggle{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
+
 div.fullname{
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -684,12 +689,12 @@ input.confirmpassword-input::placeholder {
     color: #aaa; /* Placeholder color */
 }
 
-div.cancel-create{
+button.cancel-create{
     background: rgb(255, 255, 255) ;
     border-radius: 15px ; 
 }
 
-div.save-create{
+button.save-create{
     background: rgba(242, 210, 2, 0.964) ;
     border-radius: 15px ; 
 }

@@ -47,7 +47,7 @@
 
                                 <div class="container mb-3 mt-3">
                                     <div class="row d-flex justify-content-around">
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all')">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type active" onclick="showAccounts('all')">
                                             <h6>All</h6>
                                         </div>
                                         <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('owner')">
@@ -157,10 +157,12 @@
                                                                 <div class="col-lg-5 ps-0 border-black-border d-flex justify-content-center user-position">
                                                                     <h6>Position</h6>
                                                                 </div>
-                                                                <div class="col-lg-2"></div>
-                                                                <div class="col-lg-5 ps-0 border-black-border d-flex justify-content-center save-button">
-                                                                    <h6 style="color: #fff;">Create</h6>
-                                                                </div>
+                                                                <div class="col-lg-1"></div>
+                                                                <div class="col-lg-6 ps-0 border-black-border d-flex justify-content-center">
+                                                                    <button class="btn save-button">
+                                                                        Create
+                                                                    </button>
+                                                                </div>                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -188,7 +190,7 @@
                                         <div class="row">
                                             <div class="col-lg-6 p-0 ">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button class="btn btn-secondary users-dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Select Business
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -213,7 +215,7 @@
                                             </div>
                                             <div class="col-lg-6 p-0 ">
                                                 <div class="dropdown">
-                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <button class="btn btn-secondary users-dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                                         Select Role
                                                     </button>
                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">

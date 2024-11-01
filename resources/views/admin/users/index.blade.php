@@ -47,7 +47,7 @@
 
                                 <div class="container mb-3 mt-3">
                                     <div class="row d-flex justify-content-around">
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all', this)">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type active" onclick="showAccounts('all', this)">
                                             <h6>All</h6>
                                         </div>
                                         <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('owner', this)">
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
 
-                                <div id="allAccountsContent" class="account-content" style="display: none;">
+                                <div id="allAccountsContent" class="account-content" style="display: block;">
                                     <!-- Add the relevant HTML or content for all accounts here -->
                                     <div class="container mt-3 user-list">
                                         <div class="row">

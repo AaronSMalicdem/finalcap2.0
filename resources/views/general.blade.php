@@ -17,7 +17,7 @@
        {{-- END OF FONT AWESOME --}} 
          
 </head>
-<body style="background-image: url('https://t4.ftcdn.net/jpg/07/94/30/45/360_F_794304521_O4o0Y5UrvKtDxBNHY9utMowV2VhuhRpk.jpg');">>
+<body>
     <div class="container-fluid">
         @include('navbar') <!-- Include your navigation bar -->
 

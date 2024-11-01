@@ -47,7 +47,7 @@
 
                                 <div class="container mb-3 mt-3">
                                     <div class="row d-flex justify-content-around">
-                                        <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('all', this)">
+                                        <div class="col-lg-3 d-flex justify-content-center account-type active" onclick="showAccounts('all', this)">
                                             <h6>All</h6>
                                         </div>
                                         <div class="col-lg-3 d-flex justify-content-center account-type" onclick="showAccounts('owner', this)">
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
 
-                                <div id="allAccountsContent" class="account-content" style="display: none;">
+                                <div id="allAccountsContent" class="account-content" style="display: block;">
                                     <!-- Add the relevant HTML or content for all accounts here -->
                                     <div class="container mt-3 user-list">
                                         <div class="row">
@@ -196,13 +196,20 @@
                                         <div class="col-lg-7 ">
                                             <div class="container">
                                                 <div class="row">
-                                                    <div class="col-lg-5 d-flex justify-content-center cancel-create">
-                                                        <p style="color: #000000; font-weight:bold;">Cancel</p>                                                    
+                                                    <div class="col-lg-5 d-flex justify-content-center">
+                                                        <button class="btn cancel-create" style="color: #000; font-weight: bold;">
+                                                            Cancel
+                                                        </button>
                                                     </div>
+                                                    
                                                     <div class="col-lg-2"></div>
-                                                    <div class="col-lg-5 d-flex justify-content-center save-create">
-                                                        <p style="color: #fff;font-weight:bold;">Save</p>                                                    
+
+                                                    <div class="col-lg-5 d-flex justify-content-center">
+                                                        <button class="btn save-create" style="color: #fff; font-weight: bold;">
+                                                            Save
+                                                        </button>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

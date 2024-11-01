@@ -1,9 +1,12 @@
-<div class="container mt-2">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">.</div>
+    </div>
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8 top-bar">
             <div style="container">
-                <div class="row row align-items-center">
+                <div class="row align-items-center">
                     <div class="col-lg-4 d-flex justify-content-center">
                         <div class="welcome-user">
                             <img src="#" class="user-image" />
@@ -30,12 +33,14 @@
                     <div class="col-lg-4 d-flex justify-content-center right-icons">
                         <div>
                             <a href="#" class="mx-2"><i class="fa-solid fa-store"></i></a>
-                            <a href="{{route('profile.edit')}}" class="mx-2"><i class="fa-solid fa-user"></i></a>
+                            <a href="{{ route('profile.edit') }}" class="mx-2"><i class="fa-solid fa-user"></i></a>
                             <a href="#" class="mx-2"><i class="fa-solid fa-gear"></i></a>
                             @if (Auth::check())
-                            <a href="{{ route('logout') }}" class="mx-2" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <!-- Updated Logout Link -->
+                            <a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#logoutModal">
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                             </a>
+                            <!-- Hidden Logout Form -->
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
@@ -46,5 +51,24 @@
             </div>
         </div>
         <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<!-- Logout Confirmation Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="logoutModalLabel">Come Back Soon!</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to logout? You will be returned to the login page.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="text-decoration-none text-secondary" data-bs-dismiss="modal">Cancel</a>
+                <a href="#" class="text-decoration-none text-primary" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign Out</a>
+            </div>
+        </div>
     </div>
 </div>
