@@ -701,5 +701,65 @@ button.save-create{
 /* ---------------------END OF STYLES FOR USERS CHANGE PASSWORD------------------------ */
 
 
-/* ---------------------STYLES FOR USERS LOGIN------------------------ */
+/* ---------------------STYLES FOR BUSINESSES EDIT------------------------ */
+button.editBusiness{
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    outline: none; 
+    color: #fff;
+    font-size: 25px;
+}
+
+img.uddesignLogo{
+    width: 70px;
+    height: 70px;
+ }
+hr{
+    height: 3px; 
+    background-color: #fff; 
+    border: none; 
+    display: block;
+}
+
+img.businessKuwago{
+    width: 200px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+div.businessIndexDesc {
+    height: 80px; 
+    overflow-y: scroll;
+    scrollbar-width: none; 
+}
+
+div.businessIndexDesc::-webkit-scrollbar {
+    display: none; 
+}
+
+.businessesCard {
+    background-color: #fff; /* Sets a white background for the container */
+    padding: 20px; /* Optional: Adds padding */
+    border-radius: 10px; /* Optional: Rounds the corners */
+}
+
+.upload-btn {
+    display: inline-block;
+    color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+.upload-btn input[type="file"] {
+    display: none;
+}
+
+.editBusiness, textarea.editBusiness {
+    color: rgb(248, 187, 4);
+    background-color: transparent;
+    border: none;
+    outline: none; 
+}
+
+/* ---------------------END OF STYLES FOR BUSINESSES EDIT------------------------ */
 

@@ -52,6 +52,14 @@ Route::get('/uers-authentication/login', function () {
     return view('uers-authentication.login'); // Adjust to your view path
 })->name('uers-authentication.login');
 
+Route::get('/admin/businesses/index', function () {
+    return view('admin.businesses.index'); // Adjust to your view path
+})->name('admin.businesses.index');
+
+Route::get('/admin/businesses/edit', function () {
+    return view('admin.businesses.edit'); // Adjust to your view path
+})->name('admin.businesses.edit');
+
 Route::get('/navbar', function () {
     return view('navbar'); // Adjust to your view path
 })->name('navbar');
