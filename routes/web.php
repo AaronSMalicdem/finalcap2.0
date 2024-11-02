@@ -48,6 +48,10 @@ Route::get('/kuwago_managers/edit', function () {
     return view('kuwago_managers.edit'); // Adjust to your view path
 })->name('kuwago_managers.edit');
 
+Route::get('/uers-authentication/login', function () {
+    return view('uers-authentication.login'); // Adjust to your view path
+})->name('uers-authentication.login');
+
 Route::get('/navbar', function () {
     return view('navbar'); // Adjust to your view path
 })->name('navbar');

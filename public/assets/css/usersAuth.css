@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://t4.ftcdn.net/jpg/07/94/30/45/360_F_794304521_O4o0Y5UrvKtDxBNHY9utMowV2VhuhRpk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+}
+
+div.loginForm{
+    backdrop-filter: blur(20px);
+    border-radius:10px;
+}
+.active-toggle {
+    background-color:#fff;
+}
+.hidden {
+    display: none;
+}
