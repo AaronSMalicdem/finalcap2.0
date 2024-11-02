@@ -16,3 +16,62 @@ div.loginForm{
 .hidden {
     display: none;
 }
+ img.uddesignLogo{
+    width: 70px;
+    height: 70px;
+ }
+
+ img.kuwagoLogo{
+    width: 70px;
+    height: 70px;
+ }
+
+ img.loginImages{
+    width: 180px;
+    height: 125px;
+    border-radius: 10px;
+ }
+
+ button.Loginslide-btn {
+    padding: 5px 5px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 130px; /* Set fixed width */
+    text-align: center; /* Center the text */
+}
+
+
+/* Hover effect */
+button.Loginslide-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+div.loginDesc {
+    height: 50px; /* Set your preferred height */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+}
+
+div.loginDesc::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
+div.loginNav{
+    cursor: pointer;
+    transition: background 0.3s;
+    max-width: 150px;
+}
+.active-toggle {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000; /* Optional: Adjust text color for better contrast */
+    border-radius: 8px; /* Optional: Add styling as needed */
+    font-weight: bold; /* Emphasize active item */
+    
+}
